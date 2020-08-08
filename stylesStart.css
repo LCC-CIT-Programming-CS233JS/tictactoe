@@ -1,7 +1,14 @@
 .square {
-  border: 2px solid black;
-}  
+  border: 2px solid black; 
+  border-style: collapse;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  padding-top: 10px;
+} 
 
 .red {
   color:red;
 }
+
+
