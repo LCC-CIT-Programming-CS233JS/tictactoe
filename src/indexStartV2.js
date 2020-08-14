@@ -29,9 +29,7 @@ class TTT {
 
         this.calculateWinner = this.calculateWinner.bind(this);
         this.highlightWinner = this.highlightWinner.bind(this);
-        //this.disableOne = this.disableOne.bind(this);
         this.disableAll = this.disableAll.bind(this);
-       // this.reset = this.reset.bind(this);
         this.init();
     }
 
@@ -82,8 +80,9 @@ class TTT {
             if (this.squares[a] &&
                 this.squares[a] === this.squares[b] &&
                 this.squares[a] === this.squares[c]) {
-                this.winner = this.squares[a];
-                this.winningLine = this.lines[i];
+                /*this.winner = this.squares[a];
+                this.winningLine = this.lines[i];*/
+                [this.winner, this.winningLine] = [this.squares[a], this.lines[i]];
                 return true;
             }
         }
