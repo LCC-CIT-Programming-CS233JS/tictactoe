@@ -129,9 +129,9 @@ class TTT {
         }
     
         if (this.winner == "X") {
-            this.symbol = "O",
-            document.getElementById("status").innerHTML = ("Next Player: " + this.symbol);
+            this.symbol = "O"; 
         }
+        document.getElementById("status").innerHTML = ("Next Player: " + this.symbol);
     
         this.removeRed();
         this.init();
