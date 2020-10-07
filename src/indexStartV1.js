@@ -39,6 +39,7 @@ function handleClick() {
     // Update the inner html for this square in the UI
     // Set the onclick handler for this square in the UI to an empty anonymous function or arrow function
     // Update the variable xIsNext
+    this.id.onclick() = () => {};
     if (xIsNext == true) {
         symbol = "X";
     }
